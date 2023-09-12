@@ -6,8 +6,8 @@ export const databaseProviders = [
         provide: utilDB.dataSource,
         useFactory: async () => {
             const dataSource = new DataSource({
-                type: 'mysql',
-                host: process.env.HOST,
+                type:'mysql',
+                host: process.env.DOCKER,
                 port: utilDB.dbPort,
                 username: process.env.BD_username,
                 password: process.env.BD_password,
