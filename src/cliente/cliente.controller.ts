@@ -2,7 +2,6 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { ClienteService } from './cliente.service';
 import { CreateClienteDto } from './dto/create-cliente.dto';
 import { UpdateClienteDto } from './dto/update-cliente.dto';
-import { ReturnCep } from 'src/correios/dto/return-cep';
 import { CorreiosService } from 'src/correios/correios.service';
 
 @Controller('cliente')
